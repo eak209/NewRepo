@@ -17216,7 +17216,7 @@ meanVote6_b_reshaped[1, -1] - meanVote6_b_reshaped[2, -1] </code></pre>
 <pre><code>##      mean.0    mean.1    mean.2    mean.3
 ## 1 0.3319944 0.3082708 0.3305367 0.3353013</code></pre>
 <p>Estimate stability of political interest over the political cycle.</p>
-<p>To simplify interpretation, I will consider only wave a-d (timepoints 0, 1, 2, 3), and will only keep only the respondents with non-missing values for political interest in these 4 waves I will do this analysis at the individual level, rather than taking the mean(vote6) of each wave as we did before.</p>
+<p>To simplify interpretation, I will consider only wave a-d (timepoints 0, 1, 2, 3), and will only keep only the respondents with non-missing values for political interest in these 4 waves I will do this analysis at the individual level, rather than taking the mean(vote6) of each wave as we did beforehand.</p>
 <pre class="r"><code>tmp &lt;- subset(Long, time %in% c(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;))
 respondents_NA &lt;- tmp %&gt;% group_by(pidp) %&gt;% summarise(no_missing = sum(!is.na(vote6)))
 keep_respondents &lt;- subset(respondents_NA, no_missing == 4) ## complete observations

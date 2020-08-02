@@ -139,10 +139,10 @@ meanVote6_b_reshaped <- as.data.frame(meanVote6_b) %>% reshape(idvar = "sex_dv",
 meanVote6_b_reshaped[1, -1] - meanVote6_b_reshaped[2, -1] 
 ```
 
-Estimate stability of political interest over the political cycle. 
+Estimate stability of political interest over the political cycle.
 
 To simplify interpretation, I will consider only wave a-d (timepoints 0, 1, 2, 3), and will only keep only the respondents with non-missing values for political interest in these 4 waves
-I will do this analysis at the individual level, rather than taking the mean(vote6) of each wave as we did before.
+I will do this analysis at the individual level, rather than taking the mean(vote6) of each wave as we did beforehand.
 
 ```{r}
 tmp <- subset(Long, time %in% c("a", "b", "c", "d"))
