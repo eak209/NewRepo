@@ -133,7 +133,7 @@ ggplot(meanVote6_b, aes(time_cycle, mean, group = sex_dv, color = sex_dv)) + geo
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank())
 ```
 
-I calculated the mean difference between males and females (within waves).
+I calculated the mean difference between males and females [within waves].
 ```{r}
 meanVote6_b_reshaped <- as.data.frame(meanVote6_b) %>% reshape(idvar = "sex_dv", timevar = "time_cycle", direction = "wide")
 meanVote6_b_reshaped[1, -1] - meanVote6_b_reshaped[2, -1] 
