@@ -379,7 +379,8 @@ summary {
 <pre class="r"><code>library(tidyverse)
 library(data.table)
 library(ggplot2)
-library(data.table)</code></pre>
+library(data.table)
+library(tibble)</code></pre>
 <p>I will explore political interest (<em>vote6</em>) and how it changes over the political cycle.I will try to combine population level analysis (i.e. mean political interest) with individual level analysis. General elections: 2010, 2015 and 2017 Wave 1 - 2009-2011 -&gt; Around election-election (0) Wave 2 - 2010-2012 -&gt; After election (+1) Wave 3 - 2011-2013 -&gt; After election (+2) Wave 4- 2012-2014 -&gt; After election (+3) Wave 5 - 2013-2015 -&gt; Around election (0) Wave 6 - 2015-2017 -&gt; Around election (0) Wave 7 - 2017-2019 -&gt; After election (+1)</p>
 <p>First I will read the data. I will want to read and join the data for the first 7 waves of the Understanding Society. Wave 8 does not have a variable for political interest). I will keep 5 variables: personal identifier, sample origin, sex, age and political interest.</p>
 <pre class="r"><code>files &lt;- dir(&quot;/Users/emiliakorobowicz/Desktop/DataScience3/EmilysRepo/NewRepo/Data/UKDA-6614-tab/tab/&quot;,

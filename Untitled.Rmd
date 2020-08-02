@@ -30,7 +30,7 @@ library(tidyverse)
 library(data.table)
 library(ggplot2)
 library(data.table)
-
+library(tibble)
 ```
 
 I will explore political interest (*vote6*) and how it changes over the political cycle.I will try to combine population level analysis (i.e. mean political interest) with individual level analysis.
